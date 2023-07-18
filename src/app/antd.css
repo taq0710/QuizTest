@@ -1,0 +1,4 @@
+@import '~antd/dist/reset.css';
+.ant-input {
+  padding-left: 4px !important;
+}
