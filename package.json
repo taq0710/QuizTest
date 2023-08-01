@@ -17,17 +17,23 @@
     "@types/react-dom": "18.2.4",
     "@types/react-redux": "^7.1.25",
     "@types/redux-saga": "^0.10.5",
-    "antd": "^5.5.2",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
     "debug": "^4.3.4",
+    "firebase": "^9.16.0",
+    "html2canvas": "^1.4.1",
     "next": "13.4.4",
+    "next-auth": "^4.22.3",
     "next-redux-wrapper": "^8.1.0",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-facebook": "^9.0.12",
     "react-hook-form": "^7.44.2",
+    "react-icons": "^4.10.1",
+    "react-modal": "^3.16.1",
     "react-redux": "^8.0.5",
+    "react-share": "^4.4.1",
     "react-use": "^17.4.0",
     "redux": "^4.2.1",
     "redux-saga": "^1.2.3",
@@ -37,6 +43,7 @@
     "yup": "^1.2.0"
   },
   "devDependencies": {
+    "@types/react-modal": "^3.16.0",
     "@types/redux-logger": "^3.0.9",
     "redux-logger": "^3.0.6"
   }

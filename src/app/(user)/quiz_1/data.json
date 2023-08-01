@@ -1,0 +1,102 @@
+{
+  "Question_one": {
+    "question": "Which basketball team are you a fan of?",
+    "answer": [
+      "Boston Celtics",
+      "Angeles Lakers",
+      "Golden State Warriors",
+      "Chicago Bulls",
+      "San Antonio Spurs",
+      "Other"
+    ],
+    "image": "/images/thumb_quiz/quiz_1/thumb.png"
+  },
+  "Boston Celtics": [
+    {
+      "question": "What year was the team founded?",
+      "answer": [1945, 1946, 1947, 1948],
+      "image": "/images/thumb_quiz/quiz_1/Boston_Celtics/born.png"
+    },
+    {
+      "question": "How many times has the team won the NBA Championship?",
+      "answer": [13, 15, 17, 19],
+      "image": "/images/thumb_quiz/quiz_1/Boston_Celtics/cup.png"
+    },
+    {
+      "question": "Who is the team's biggest rival?",
+      "answer": [
+        "San Antonio Spurs",
+        "Golden State Warriors",
+        "Chicago Bulls",
+        "Los Angeles Lakers"
+      ],
+      "image": "/images/thumb_quiz/quiz_1/Boston_Celtics/vs.png"
+    },
+    {
+      "question": "Which legend is known as the Lord of the Rings?",
+      "answer": ["Sam Jones", "John Havlicek", "Bill Russell", "KC Jones"],
+      "image": "/images/thumb_quiz/quiz_1/Boston_Celtics/legend.png"
+    },
+    {
+      "question": "Who wears the number 24 shirt of the team?",
+      "answer": ["KC Jones", "Sam Jones", "John Havlicek", "Bill Russell"],
+      "image": "/images/thumb_quiz/quiz_1/Boston_Celtics/24.png"
+    }
+  ],
+  "Angeles Lakers": [
+    {
+      "question": "Which basketball team are you a fan of?",
+      "answer": [
+        "Boston Celtics",
+        "Angeles Lakers",
+        "Golden State Warriors",
+        "Chicago Bulls",
+        "San Antonio Spurs",
+        "Other"
+      ],
+      "image": "/images/thumb_quiz/quiz_1/thumb.png"
+    }
+  ],
+  "Golden State Warriors": [
+    {
+      "question": "Which basketball team are you a fan of?",
+      "answer": [
+        "Boston Celtics",
+        "Angeles Lakers",
+        "Golden State Warriors",
+        "Chicago Bulls",
+        "San Antonio Spurs",
+        "Other"
+      ],
+      "image": "/images/thumb_quiz/quiz_1/thumb.png"
+    }
+  ],
+  "Chicago Bulls": [
+    {
+      "question": "Which basketball team are you a fan of?",
+      "answer": [
+        "Boston Celtics",
+        "Angeles Lakers",
+        "Golden State Warriors",
+        "Chicago Bulls",
+        "San Antonio Spurs",
+        "Other"
+      ],
+      "image": "/images/thumb_quiz/quiz_1/thumb.png"
+    }
+  ],
+  "San Antonio Spurs": [
+    {
+      "question": "Which basketball team are you a fan of?",
+      "answer": [
+        "Boston Celtics",
+        "Angeles Lakers",
+        "Golden State Warriors",
+        "Chicago Bulls",
+        "San Antonio Spurs",
+        "Other"
+      ],
+      "image": "/images/thumb_quiz/quiz_1/thumb.png"
+    }
+  ]
+}

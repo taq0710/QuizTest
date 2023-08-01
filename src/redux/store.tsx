@@ -1,41 +1,25 @@
-
-import { AnyAction, combineReducers, configureStore } from "@reduxjs/toolkit";
-import { HYDRATE } from "next-redux-wrapper";
+"use client"
+import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
 import rootSaga from "./sagas";
-import userReducer from "./reducers/user"
-const rootReducer = combineReducers({
-  user: userReducer,
-});
+import quizReducer from "./features/quiz/quizSlide"
+import loginReducer from "./features/login/loginSlide"
 
-const masterReducer = (state: any, action: AnyAction) => {
-  if (action.type === HYDRATE) {
-    const nextState = {
-      ...state, // use previous state
-      ...action.payload, // apply delta from hydration
-    };
-    return nextState;
-  } else {
-    if (action.type === "profile/reset") state = undefined;
-    return rootReducer(state, action);
-  }
-};
+const sagaMiddleware = createSagaMiddleware()
+export const store = configureStore({
+  reducer: {
+    login: loginReducer,
+    quiz: quizReducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false
+    }).concat(sagaMiddleware)
+})
+sagaMiddleware.run(rootSaga)
 
-export function makeStore() {
-  const sagaMiddleware = createSagaMiddleware();
-  const store = configureStore({
-    reducer: masterReducer,
-    middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware({
-        serializableCheck: false,
-      }).concat(sagaMiddleware),
-    devTools: process.env.NODE_ENV !== "production",
-  });
-  sagaMiddleware.run(rootSaga);
-  return store;
-}
-export const store = makeStore();
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch
 
-export type AppStore = ReturnType<typeof makeStore>;
-export type AppState = ReturnType<typeof rootReducer>;
-export type AppDispatch = AppStore["dispatch"];
+
+

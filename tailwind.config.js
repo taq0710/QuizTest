@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         bevn: ["var(--font-be-vn)"],
       },
+      colors:{
+        primary: "#1870D5",
+      }
     },
   },
   plugins: [],
